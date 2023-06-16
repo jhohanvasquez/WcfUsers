@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServiceUsers" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:5296/WCFUsers.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:5296/WCFUsers.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:5296/WCFUsers.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfDomain.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWCFUsers_GetUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_GetUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_InsertUserDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_InsertUserDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_GetAllUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUser" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_GetAllUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_FindById_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindById" />
+  </wsdl:message>
+  <wsdl:message name="IWCFUsers_FindById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindByIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWCFUsers">
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFUsers/GetUserDetails" message="tns:IWCFUsers_GetUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFUsers/GetUserDetailsResponse" message="tns:IWCFUsers_GetUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFUsers/InsertUserDetails" message="tns:IWCFUsers_InsertUserDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFUsers/InsertUserDetailsResponse" message="tns:IWCFUsers_InsertUserDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFUsers/GetAllUser" message="tns:IWCFUsers_GetAllUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFUsers/GetAllUserResponse" message="tns:IWCFUsers_GetAllUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFUsers/UpdateUser" message="tns:IWCFUsers_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFUsers/UpdateUserResponse" message="tns:IWCFUsers_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFUsers/DeleteUser" message="tns:IWCFUsers_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFUsers/DeleteUserResponse" message="tns:IWCFUsers_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWCFUsers/FindById" message="tns:IWCFUsers_FindById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWCFUsers/FindByIdResponse" message="tns:IWCFUsers_FindById_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWCFUsers" type="tns:IWCFUsers">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IWCFUsers/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserDetails">
+      <soap:operation soapAction="http://tempuri.org/IWCFUsers/InsertUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUser">
+      <soap:operation soapAction="http://tempuri.org/IWCFUsers/GetAllUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IWCFUsers/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IWCFUsers/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindById">
+      <soap:operation soapAction="http://tempuri.org/IWCFUsers/FindById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceUsers">
+    <wsdl:port name="BasicHttpBinding_IWCFUsers" binding="tns:BasicHttpBinding_IWCFUsers">
+      <soap:address location="http://localhost:5296/WCFUsers.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

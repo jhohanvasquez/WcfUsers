@@ -1,0 +1,12 @@
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfDomain\bin\Debug\WcfDomain.dll
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfDomain\bin\Debug\WcfDomain.pdb
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfDomain\obj\Debug\WcfDomain.csproj.AssemblyReference.cache
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfDomain\obj\Debug\WcfDomain.csproj.CoreCompileInputs.cache
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfDomain\obj\Debug\WcfDomain.dll
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfDomain\obj\Debug\WcfDomain.pdb
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfDomain\bin\Debug\WcfDomain.dll
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfDomain\bin\Debug\WcfDomain.pdb
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfDomain\obj\Debug\WcfDomain.csproj.AssemblyReference.cache
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfDomain\obj\Debug\WcfDomain.csproj.CoreCompileInputs.cache
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfDomain\obj\Debug\WcfDomain.dll
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfDomain\obj\Debug\WcfDomain.pdb

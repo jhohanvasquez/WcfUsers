@@ -1,0 +1,125 @@
+CREATE DATABASE BDUsers
+GO
+USE [BDUsers]
+GO
+/****** Object:  Table [dbo].[Logs]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Logs](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [varchar](250) NOT NULL,
+	[DateRegister] [datetime] NOT NULL,
+ CONSTRAINT [PK_Logs] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Users]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Users](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [varchar](100) NOT NULL,
+	[FechaNacimiento] [datetime] NOT NULL,
+	[Sexo] [varchar](1) NOT NULL,
+ CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Logs] ADD  CONSTRAINT [DF_Logs_DateRegister]  DEFAULT (getdate()) FOR [DateRegister]
+GO
+/****** Object:  StoredProcedure [dbo].[EditarUsuarios]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+------------------EDITAR
+create proc [dbo].[EditarUsuarios]
+@Nombre nvarchar (100),
+@FechaNacimiento datetime,
+@Sexo varchar (1),
+@Id int
+as
+update Users set Nombre=@Nombre, FechaNacimiento=@FechaNacimiento, Sexo =@Sexo where Id=@Id
+GO
+/****** Object:  StoredProcedure [dbo].[EliminarUsuarios]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+------------------------ELIMINAR
+CREATE proc [dbo].[EliminarUsuarios]
+@Id int
+as
+delete from Users where Id=@Id
+GO
+/****** Object:  StoredProcedure [dbo].[InsertarLogs]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--------------------------INSERTAR 
+CREATE proc [dbo].[InsertarLogs]
+@Description nvarchar (250)
+as
+insert into Logs (Description) values (@Description)
+GO
+/****** Object:  StoredProcedure [dbo].[InsertarUsuarios]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--------------------------INSERTAR 
+create proc [dbo].[InsertarUsuarios]
+@Nombre nvarchar (100),
+@FechaNacimiento datetime,
+@Sexo varchar (1)
+as
+insert into Users values (@Nombre,@FechaNacimiento,@Sexo)
+GO
+/****** Object:  StoredProcedure [dbo].[MostrarUsuariosPorId]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+---PROCEDIMIENTOS ALMACENADOS 
+--------------------------MOSTRAR 
+CREATE proc [dbo].[MostrarUsuariosPorId]
+@Id int
+as
+BEGIN
+select * from [dbo].[Users] where Id = @Id
+END
+GO
+/****** Object:  StoredProcedure [dbo].[MostrarUsuariosPorNombre]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+---PROCEDIMIENTOS ALMACENADOS 
+--------------------------MOSTRAR 
+CREATE proc [dbo].[MostrarUsuariosPorNombre]
+@Nombre varchar(100)
+as
+BEGIN
+select * from [dbo].[Users] where Nombre = @Nombre
+END
+GO
+/****** Object:  StoredProcedure [dbo].[MostrarUsuariosTodos]    Script Date: 16/06/2023 2:45:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+---PROCEDIMIENTOS ALMACENADOS 
+--------------------------MOSTRAR 
+CREATE proc [dbo].[MostrarUsuariosTodos]
+as
+select * from [dbo].[Users] 
+GO

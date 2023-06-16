@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WcfClient.Models.MvcUser>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Users</h2>
+
+<p>
+    <button type="button" class="btn btn-outline-success">
+        @Html.ActionLink("Create New User", "Create")
+    </button>
+</p>
+@using (Html.BeginForm("ExportToExcel", "User", FormMethod.Post))
+{
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.FechaNacimiento)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Sexo)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (WcfClient.Models.MvcUser item in ViewBag.MiListado)
+            {
+                <tr>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.FechaNacimiento)
+                    </td>
+                    <td scope="row">
+                        @Html.DisplayFor(modelItem => item.Sexo)
+                    </td>
+                    <td scope="row">
+                        <button type="button" class="btn btn-outline-primary">
+                            @Html.ActionLink("Edit", "Update", new { name = item.Nombre })
+                        </button> |
+
+                        <button type="button" class="btn btn-outline-danger">
+                            @Html.ActionLink("Delete", "Delete", new { name = item.Nombre })
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <input type="submit" value="Export to Excel" class="btn btn-outline-success" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

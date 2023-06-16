@@ -1,0 +1,7 @@
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\bin\WcfExample.dll.config
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\bin\WcfExample.dll
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\bin\WcfExample.pdb
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\obj\Debug\WcfExample.csproj.AssemblyReference.cache
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\obj\Debug\WcfExample.csproj.CoreCompileInputs.cache
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\obj\Debug\WcfExample.dll
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\obj\Debug\WcfExample.pdb

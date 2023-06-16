@@ -1,0 +1,35 @@
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\bin\WcfExample.dll.config
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\bin\WcfExample.dll
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\bin\WcfExample.pdb
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\obj\Debug\WcfUsers.csproj.AssemblyReference.cache
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\obj\Debug\WcfUsers.csproj.CoreCompileInputs.cache
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\obj\Debug\WcfExample.dll
+C:\Users\jhohan_vasquez\Documents\Marcela Documentos\WCF-CRUD-MVC-master\WcfExample\obj\Debug\WcfExample.pdb
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\obj\Debug\WcfUsers.csproj.AssemblyReference.cache
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\obj\Debug\WcfUsers.csproj.CoreCompileInputs.cache
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfDomain.dll
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfInfrastructure.dll
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfInterfaces.dll
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfDomain.pdb
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfInfrastructure.pdb
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfInterfaces.pdb
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\obj\Debug\WcfUsers.csproj.CopyComplete
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfUsers.dll.config
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfUsers.dll
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\bin\WcfUsers.pdb
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\obj\Debug\WcfUsers.dll
+C:\Users\jhohan_vasquez\Desktop\WCFSolucionUsers\WcfUsers\obj\Debug\WcfUsers.pdb
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfUsers.dll.config
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfUsers.dll
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfUsers.pdb
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfDomain.dll
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfInfrastructure.dll
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfInterfaces.dll
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfDomain.pdb
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfInfrastructure.pdb
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\bin\WcfInterfaces.pdb
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\obj\Debug\WcfUsers.csproj.AssemblyReference.cache
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\obj\Debug\WcfUsers.csproj.CoreCompileInputs.cache
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\obj\Debug\WcfUsers.csproj.CopyComplete
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\obj\Debug\WcfUsers.dll
+C:\Users\jhohan_vasquez\source\repos\WcfUsers\WcfUsers\obj\Debug\WcfUsers.pdb
