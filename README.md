@@ -1,6 +1,10 @@
 # WcfUsers
 Aplicacion MVC con Razor, consumiendo servicio WCF realizando CRUD en SqlServer, con log consumindo en una API con seguridad JWT.
 
+Integracion con FireBase, estadisticas de Google.
+
+* <img width="933" alt="image" src="https://github.com/jhohanvasquez/WcfUsers/assets/36570532/c6fe0ebb-24aa-4a79-baee-a01a721d8554">
+
 Script de base datos en:
 
 * https://github.com/jhohanvasquez/WcfUsers/tree/main/WcfDataBase
