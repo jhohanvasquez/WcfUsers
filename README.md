@@ -3,7 +3,7 @@ Aplicacion MVC con Razor, consumiendo servicio WCF realizando CRUD en SqlServer,
 
 Script de base datos en:
 
-* 
+* https://github.com/jhohanvasquez/WcfUsers/tree/main/WcfDataBase
 
 * <img width="958" alt="image" src="https://github.com/jhohanvasquez/WcfUsers/assets/36570532/f8d2f9e0-d5fd-4cac-b8cd-d25bfb462547">
 
